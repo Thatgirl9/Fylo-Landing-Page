@@ -534,10 +534,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.fixed {
-  position: fixed;
-}
-
 .absolute {
   position: absolute;
 }
@@ -648,10 +644,6 @@ video {
   max-height: 1.75rem;
 }
 
-.w-1\/4 {
-  width: 25%;
-}
-
 .w-2 {
   width: 0.5rem;
 }
@@ -670,6 +662,11 @@ video {
 
 .w-6\/12 {
   width: 50%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-full {
@@ -740,10 +737,6 @@ video {
   gap: 2.25rem;
 }
 
-.gap-y-8 {
-  row-gap: 2rem;
-}
-
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
@@ -797,11 +790,6 @@ video {
   border-color: hsl(176 68% 64% / var(--tw-border-opacity));
 }
 
-.bg-cyanColor {
-  --tw-bg-opacity: 1;
-  background-color: hsl(176 68% 64% / var(--tw-bg-opacity));
-}
-
 .bg-footerBackground {
   --tw-bg-opacity: 1;
   background-color: hsl(216 53% 9% / var(--tw-bg-opacity));
@@ -822,22 +810,6 @@ video {
   background-color: hsl(219 30% 18% / var(--tw-bg-opacity));
 }
 
-.bg-opacity-20 {
-  --tw-bg-opacity: 0.2;
-}
-
-.bg-opacity-10 {
-  --tw-bg-opacity: 0.1;
-}
-
-.bg-opacity-5 {
-  --tw-bg-opacity: 0.05;
-}
-
-.bg-opacity-0 {
-  --tw-bg-opacity: 0;
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -848,28 +820,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-introEmailSignUpBackground {
-  --tw-gradient-from: hsl(217, 28%, 15%) var(--tw-gradient-from-position);
-  --tw-gradient-to: hsl(217 28% 15% / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-blueColor {
-  --tw-gradient-from: hsl(198, 60%, 50%) var(--tw-gradient-from-position);
-  --tw-gradient-to: hsl(198 60% 50% / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .to-blueColor {
   --tw-gradient-to: hsl(198, 60%, 50%) var(--tw-gradient-to-position);
-}
-
-.to-footerBackground {
-  --tw-gradient-to: hsl(216, 53%, 9%) var(--tw-gradient-to-position);
-}
-
-.to-introEmailSignUpBackground {
-  --tw-gradient-to: hsl(217, 28%, 15%) var(--tw-gradient-to-position);
 }
 
 .to-mainBackground {
@@ -984,6 +936,11 @@ video {
   color: hsl(176 68% 64% / var(--tw-text-opacity));
 }
 
+.text-mainBackground {
+  --tw-text-opacity: 1;
+  color: hsl(218 28% 13% / var(--tw-text-opacity));
+}
+
 .text-whiteColor {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
@@ -993,30 +950,26 @@ video {
   opacity: 0.1;
 }
 
+.opacity-30 {
+  opacity: 0.3;
+}
+
+.opacity-100 {
+  opacity: 1;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-introEmailSignUpBackground {
   --tw-shadow-color: hsl(217, 28%, 15%);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-whiteColor {
-  --tw-shadow-color: hsl(0, 0%, 100%);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-mainBackground {
-  --tw-shadow-color: hsl(218, 28%, 13%);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -1075,8 +1028,8 @@ video {
     right: 0;
     height: 5%;
     top: 4em;
-    width: 15em;
-    opacity: 3;
+    width: 50%;
+    /* opacity: 3; */
     /* transform: translateY(100%); */
     transition: all 0.9s ease-in-out;
   }

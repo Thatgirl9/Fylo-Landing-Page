@@ -51,8 +51,8 @@
     right: 0;
     height: 5%;
     top: 4em;
-    width: 15em;
-    opacity: 3;
+    width: 50%;
+    /* opacity: 3; */
     /* transform: translateY(100%); */
     transition: all 0.9s ease-in-out;
   }
